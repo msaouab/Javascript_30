@@ -4,3 +4,75 @@ html {
 	background-position: center;
 	height: 100%;
 }
+
+body {
+	font-family: "Impact", sans-serif;
+	font-weight: normal;
+	margin: 0;
+	display: flex;
+	flex: 1;
+	min-height: 100vh;
+	text-align: center;
+}
+
+.digital {
+	position: fixed;
+	top: 0;
+	right: 0;
+	margin: 10px;
+	color: aqua;
+	font-size: 3rem;
+}
+
+.clock {
+	position: relative;
+	border: 20px solid rgb(34, 28, 28);;
+	border-radius: 50%;
+	width: 18rem;
+	height: 18rem;
+	margin: auto;
+	box-shadow:
+        0 0 0 4px rgba(0,0,0,0.1),
+        inset 0 0 0 3px #523232,
+        inset 0 0 10px black,
+        0 0 10px rgba(0,0,0,0.2);
+	display: flex;
+	align-items: center;
+}
+
+.center {
+	width: 1rem;
+	height: 1rem;
+	border-radius: 50%;
+	background-color: white;
+	margin: auto;
+}
+
+.hand {
+	border-radius: 2px;
+	height: 4px;
+	top: 50%;
+	position: absolute;
+	transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hour {
+	background-color: beige;
+	width: 20%;
+	left: 30%;
+}
+
+.min {
+	background-color: beige;
+	width: 30%;
+	left: 20%;
+}
+
+.sec {
+	background-color: black;
+	width: 40%;
+	left: 10%;
+}
