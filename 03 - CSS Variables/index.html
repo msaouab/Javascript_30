@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<title>CSS Variables</title>
+</head>
+<body>
+	<h1>Update CSS Variables with <span>JS</span></h1>
+	<main>
+		<div class="control">
+			<label for="" id="space-label">Spacing:
+				<input type="range" id="space" name="space" min="10" max="200" value="10" data-sizing="px">
+			</label>
+			<label for="" id="blur-label">Blur:
+				<input type="range" id="blur" name="blur" min="0" max="25" value="10" data-sizing="px">
+			</label>
+			<label for="base" id="color-label">Base Color:
+				<input type="color" id="color" name="base" value="#ffc600">
+			</label>
+			<label for="" id="width-label">Width:
+				<input type="range" id="width" name="width" min="400" max="800" value="400" data-sizing="px">
+			</label>
+			<label for="" id="border-label">border Raduis:
+				<input type="range" id="border" name="border" min="0" max="50" value="0" data-sizing="%">
+			</label>
+		</div>
+	</main>
+	<div class="img">
+		<img src="images/background.jpeg" alt="Image to Perform Actions on">
+	</div>
+	<script src="./script.js"></script>
+</body>
+</html>
