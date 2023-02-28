@@ -1,0 +1,74 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+div {
+	background-image: url('./images/background.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	background-attachment: fixed;
+}
+
+form {
+	margin: 50px;
+	max-width: 400px;
+	margin-top: 4%;
+}
+
+input {
+	padding: 20px;
+	width: 100%;
+}
+
+input.search {
+	border: 10px solid #f7f7f7;
+	border-radius: 5px;
+	text-align: center;
+	outline: 0;
+	width: 120%;
+	position: relative;
+	left: -17%;
+	font-size: 3rem;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.12), inset 0 0 2px rgba(0, 0, 0, 0.19);
+	z-index: 1;
+}
+
+.list li {
+	list-style: none;
+	padding: 20px;
+	font-size: 20px;
+	background: white;
+	border-bottom: 1px solid #d8d8d8;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
+}
+
+.list li:nth-child(odd) {
+	transform: perspective(100px) rotateX(-4deg) translateY(0px) scale(1.001);
+	background: linear-gradient(to bottom, #ffffff 0%, #efefef 100%);
+}
+
+.list li:nth-child(even) {
+	transform: perspective(100px) rotateX(4deg) translateY(-1.5px) scale(1.001);
+	background: linear-gradient(to bottom, #ffffff 0%, #efefef 100%);
+}
+
+.hl {
+	background-color: #e9ec13ee;
+}
+
+.city {
+}
+
+.popul {
+	position: absolute;
+	justify-content: flex-end;
+	text-align: center;
+	right: 10px;
+}
